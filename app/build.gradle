@@ -39,7 +39,6 @@ dependencies {
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'com.google.android.material:material:1.2.0-alpha05'
     implementation 'net.dankito.richtexteditor:richtexteditor-android:2.0.15'
-    implementation "com.arthurivanets.bottomsheet:bottomsheets-core:1.1.2"
-
-
+    implementation 'com.flipboard:bottomsheet-core:1.5.3'
+    implementation 'com.flipboard:bottomsheet-commons:1.5.3' // optional
 }
