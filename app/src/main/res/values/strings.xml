@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SimpleNote</string>
+    <string name="fabNote">create new note</string>
+</resources>
