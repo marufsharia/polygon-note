@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">SimpleNote</string>
     <string name="fabNote">create new note</string>
+    <string name="mal_title_about">Polygone Note</string>
 </resources>

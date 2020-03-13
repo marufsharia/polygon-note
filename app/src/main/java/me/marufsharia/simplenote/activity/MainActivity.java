@@ -22,6 +22,7 @@ import me.marufsharia.simplenote.db.NoteDBHelper;
 import me.marufsharia.simplenote.db.SQLiteDatabaseHelper;
 import me.marufsharia.simplenote.model.Note;
 import me.marufsharia.simplenote.utility.MyDividerItemDecoration;
+import p32929.officeaboutlib.Others.OfficeAboutHelper;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -88,6 +89,8 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.mnuAbout:
                 Toast.makeText(this, "new About", Toast.LENGTH_SHORT).show();
+                OfficeAboutHelper officeAboutHelper = new OfficeAboutHelper(this, "https://raw.githubusercontent.com/p32929/SomeHowTosAndTexts/master/Office/OfficeInfo.json");
+                officeAboutHelper.showAboutActivity();
                 break;
             case R.id.mnuExit:
                 finish();

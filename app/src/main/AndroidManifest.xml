@@ -10,9 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".activity.NoteDetailsActivity" />
-        <activity
-            android:name=".activity.NoteCreateActivity"
-            android:screenOrientation="portrait" />
+        <activity android:name=".activity.NoteCreateActivity" />
         <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
