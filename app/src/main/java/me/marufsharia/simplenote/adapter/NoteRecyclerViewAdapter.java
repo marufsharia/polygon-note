@@ -1,10 +1,13 @@
 package me.marufsharia.simplenote.adapter;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -14,19 +17,47 @@ import androidx.appcompat.widget.PopupMenu;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import me.marufsharia.simplenote.R;
 import me.marufsharia.simplenote.model.Note;
 
-public class NoteRecyclerViewAdapter  extends RecyclerView.Adapter<NoteRecyclerViewAdapter.NoteVH> {
+public class NoteRecyclerViewAdapter extends RecyclerView.Adapter<NoteRecyclerViewAdapter.NoteVH> implements Filterable {
     List<Note> noteList;
+    List<Note> fullNoteList;
     Context context;
-    
-    public NoteRecyclerViewAdapter(Context context,List<Note> noteList) {
-        this.context=context;
-        this.noteList = noteList;
-    }
+    private Filter noteFilter = new Filter() {
+        @Override
+        protected FilterResults performFiltering(CharSequence constraint) {
+            List<Note> filteredList = new ArrayList<>();
+            
+            if (constraint == null || constraint.length() == 0) {
+                Log.d("tag", constraint.toString());
+                filteredList.addAll(fullNoteList);
+            } else {
+                String filterPattern = constraint.toString().toLowerCase().trim();
+                
+                for (Note item : fullNoteList) {
+                    if (item.getTitle().toLowerCase().contains(filterPattern)) {
+                        filteredList.add(item);
+                    }
+                }
+            }
+            
+            FilterResults results = new FilterResults();
+            results.values = filteredList;
+            
+            return results;
+        }
+        
+        @Override
+        protected void publishResults(CharSequence constraint, FilterResults results) {
+            noteList.clear();
+            noteList.addAll((List) results.values);
+            notifyDataSetChanged();
+        }
+    };
     
     @NonNull
     @Override
@@ -75,6 +106,19 @@ public class NoteRecyclerViewAdapter  extends RecyclerView.Adapter<NoteRecyclerV
     public int getItemCount() {
         return noteList.size();
     }
+    
+    public NoteRecyclerViewAdapter(Context context, List<Note> noteList) {
+        this.context = context;
+        this.noteList = noteList;
+        fullNoteList = new ArrayList<>(noteList);
+    }
+    
+    @Override
+    public Filter getFilter() {
+        return noteFilter;
+    }
+    
+    
     
     public static class NoteVH extends RecyclerView.ViewHolder {
         CardView cardViewNote;

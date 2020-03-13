@@ -101,7 +101,8 @@ public class NoteCreateActivity extends AppCompatActivity {
                 // htmlChangedAsync() gets called on a background thread, so if you want to use it on UI thread you have to call runOnUiThread()
             }
         });*/
-        
+    
+    
     }
     
     @Override

@@ -3,25 +3,37 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/mnuNewNote"
-        android:icon="@drawable/ic_add_circle_outline_black_24dp"
-        android:title="Create New Note"
-        android:visible="true"
-        app:showAsAction="ifRoom" />
+        android:id="@+id/mnuSearch"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView" />
+
     <item
-        android:id="@+id/mnuSetting"
-        android:icon="@drawable/ic_settings_black_24dp"
-        android:title="Setting"
-        android:visible="true"
-        app:showAsAction="ifRoom" />
-    <item
-        android:id="@+id/mnuAbout"
-        android:icon="@drawable/ic_info_outline_black_24dp"
-        android:title="About"
-        android:visible="true"
-        app:showAsAction="ifRoom" />
-    <item
-        android:id="@+id/mnuExit"
-        android:icon="@drawable/ic_exit_to_app_black_24dp"
-        android:title="Exit" />
+        android:id="@+id/action_more"
+        android:icon="@drawable/ic_more_vert_black_24dp"
+        android:title=""
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/mnuNewNote"
+                android:icon="@drawable/ic_add_circle_outline_black_24dp"
+                android:title="Create New Note" />
+            <item
+                android:id="@+id/mnuSetting"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="Setting" />
+            <item
+                android:id="@+id/mnuAbout"
+                android:icon="@drawable/ic_info_outline_black_24dp"
+                android:title="About" />
+            <item
+                android:id="@+id/mnuExit"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"
+                android:title="Exit" />
+        </menu>
+    </item>
+
+
 </menu>

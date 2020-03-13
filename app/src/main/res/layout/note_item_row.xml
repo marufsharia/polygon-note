@@ -12,7 +12,7 @@
         android:elevation="6dp"
         android:clickable="true"
         android:foreground="?attr/selectableItemBackground"
-        app:cardCornerRadius="6dp"
+        android:layout_marginBottom="1dp"
         android:focusable="true">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -21,13 +21,10 @@
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="60dp"
-
-                android:layout_height="60dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-                android:src="@drawable/ic_layers_black_24dp_blue"
+                android:layout_width="8dp"
+                android:layout_height="0dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/greenline"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -63,7 +60,7 @@
                 app:layout_constraintHorizontal_bias="0.97"
                 app:layout_constraintStart_toEndOf="@+id/txtTitle"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_more_vert_black_24dp" />
+                app:srcCompat="@drawable/ic_more_vert_black_list_24dp" />
 
             <TextView
                 android:id="@+id/txtCategory"

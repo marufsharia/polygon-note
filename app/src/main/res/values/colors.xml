@@ -3,4 +3,25 @@
     <color name="colorPrimary">#FF8A65</color>
     <color name="colorPrimaryDark">#FFB74D</color>
     <color name="colorAccent">#7986CB</color>
+    <!-- App color -->
+    <color name="navigationBar">#25364a</color>
+    <color name="white">#ffffff</color>
+    <color name="green">#00a900</color>
+    <color name="lightBlue">#00bcd4</color>
+    <color name="lightGreen">#00c7a0</color>
+    <color name="lightBlack">#5a7785</color>
+    <color name="greenLight">#36bb9e</color>
+    <color name="greenLightX2">#49d0b3</color>
+    <color name="red">#F44336</color>
+    <color name="textDark">#111e2d</color>
+    <color name="blackBg">#242424</color>
+    <color name="lightBg">#657790</color>
+    <color name="divider">#cccccc</color>
+    <color name="grey">#e3e3e3</color>
+    <color name="iconBlue">#33b5e5</color>
+    <color name="black">#000</color>
+
+    <color name="colorPrimaryPurple">#6827D8</color>
+    <color name="colorPrimaryDarkPurple">#5900F3</color>
+    <color name="colorAccentPurple">#1B1A1A</color>
 </resources>
