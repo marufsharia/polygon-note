@@ -1,42 +1,18 @@
 {
   "officeLogoUrl": "https://user-images.githubusercontent.com/6418354/62771043-1af00180-babe-11e9-8830-7904a358ccc0.png",
-  "googlePlayUrl": "https://play.google.com/store/apps/developer?id=Rich+IT",
-  "facebookPageUrl": "https://www.facebook.com/rich.it.ctg",
+  "googlePlayUrl": "https://play.google.com/store/apps/developer?id=mstecsoft",
+  "facebookPageUrl": "https://www.facebook.com/mstecsoft",
   "facebookPageID": "104754327537968",
-  "groupUrl": "https://www.facebook.com/groups/518485748694084/",
-  "youtubeUrl": "https://www.youtube.com/user/marquesbrownlee",
-  "githubUrl": "http://github.com/p32929",
-  "webUrl": "https://p32929.github.io/Portfolio/",
+  "groupUrl": "https://www.facebook.com/groups/mstecsoft/",
+  "youtubeUrl": "https://www.youtube.com/user/marufsharia",
+  "githubUrl": "http://github.com/marufsharia",
+  "webUrl": "https://marufsharia.github.io",
   "members": [
     {
-      "imageUrl": "https://avatars1.githubusercontent.com/u/6418354?s=460&v=4",
-      "name": "Fayaz Bin Salam",
+      "imageUrl": "https://scontent.fdac27-1.fna.fbcdn.net/v/t1.0-9/s960x960/41013852_1924951860933154_6222075407538061312_o.jpg?_nc_cat=100&_nc_sid=85a577&_nc_oc=AQmw4JgsMBC2_G1t5TfEjUuyAOqeRiYs6sgAgXEvt3yhx5qzZy_YL9MH-wSvnPXSAmY&_nc_ht=scontent.fdac27-1.fna&_nc_tp=7&oh=e55072dadf650b878c7ad1534cf1a11e&oe=5E924A8A",
+      "name": "Maruf Sharia",
       "post": "Founder & CEO",
-      "contactUrl": "https://www.facebook.com/p32929"
-    },
-    {
-      "imageUrl": "https://user-images.githubusercontent.com/6418354/62595278-92c3fd80-b8ff-11e9-89b1-8a4b0d3fbae4.jpg",
-      "name": "Arfatul Mowla Shuvo",
-      "post": "Software Developer",
-      "contactUrl": "https://www.facebook.com/mowla.shuvo"
-    },
-    {
-      "imageUrl": "https://user-images.githubusercontent.com/6418354/62595290-a0798300-b8ff-11e9-9b78-ea9262f4bf94.JPG",
-      "name": "Xenon",
-      "post": "Software Developer",
-      "contactUrl": "https://www.facebook.com/plabon.shuvo1"
-    },
-    {
-      "imageUrl": "https://user-images.githubusercontent.com/6418354/62595321-bdae5180-b8ff-11e9-8b44-3378b8a88ce3.jpg",
-      "name": "Misbah",
-      "post": "Software Developer",
-      "contactUrl": ""
-    },
-    {
-      "imageUrl": "https://user-images.githubusercontent.com/6418354/64313087-53ef9900-cfcc-11e9-9c7c-2e9d08dff83e.jpg",
-      "name": "Dany",
-      "post": "Software Developer",
-      "contactUrl": "https://www.facebook.com/dany.barua.391"
+      "contactUrl": "https://www.facebook.com/marufsharia"
     }
   ]
 }

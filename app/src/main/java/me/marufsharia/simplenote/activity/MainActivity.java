@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.mnuAbout:
                 Toast.makeText(this, "new About", Toast.LENGTH_SHORT).show();
-                OfficeAboutHelper officeAboutHelper = new OfficeAboutHelper(this, "https://raw.githubusercontent.com/p32929/SomeHowTosAndTexts/master/Office/OfficeInfo.json");
+                OfficeAboutHelper officeAboutHelper = new OfficeAboutHelper(this, "https://raw.githubusercontent.com/marufsharia/polygon-note/master/app/src/main/assets/about_data.json");
                 officeAboutHelper.showAboutActivity();
                 break;
             case R.id.mnuExit:
